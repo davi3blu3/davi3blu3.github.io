@@ -96,8 +96,6 @@ textarea {
    ========================================================================== */
 
 .circle-frame {
-    display: inline-block;
-    margin: 20px;
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -105,24 +103,19 @@ textarea {
 }
 
 .emma-float {
+    margin: 0 auto;
+    width: 45%;
     float: left;
-    overflow: 
 }
 
 .dave-float {
+    margin: 0 auto;
+    width: 45%;
     float: right;
 }
 
 #arguments {
     clear: both;
-}
-
-#arguments ul {
-    width: 45%;
-}
-
-#arguments ul li {
-    margin-bottom: 20px;
 }
 
 
