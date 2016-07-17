@@ -8,17 +8,29 @@ body {
     margin: 0;
 }
 
-section {
+.jumbo-image {
+    text-align: center;
+    height: 80vh;
+    margin-bottom: 0;
+    background-image: url(../img/nash_skyline_med.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 
 }
 
+.title {
+    margin-top: 30vh;
+}
 
 #match {
     background-color:  #333;
     color: #eee;
     line-height: 1.4;    
     text-align: center;
-    position: fixed;
+/*    position: fixed;*/
     top: 0;
     width: 100%;
 }

@@ -1,16 +1,18 @@
 $(document).ready(function(){
 
 	// Variables
-	var targetScroll;
+	var stickyTarget, // scroll point at which header becomes sticky
+		matchTarget; // scroll point at which match animation triggered
 
 	// Scroll event listener
 	$(window).scroll(function() {
 
 		// updates var if window size changed
-		targetScroll = $('#btm-spacer').position().top - 185 // adjusted for header height 
+		stickyTarget = $('header').position().top;
+		matchTarget = $('#btm-spacer').position().top - 185 // adjusted for header height 
 
 		// When bottom of header reaches target point
-		if ( $(window).scrollTop() > targetScroll ) {
+		if ( $(window).scrollTop() > matchTarget ) {
 			// Detect parent element, so unwrap only happens once
 			if ( $('.logo').parent().attr('class') === "col-xs-6" ) {
 				//test
