@@ -45,6 +45,14 @@ section {
     display: inline-block;
 }
 
+h2.emma, h2.dave {
+    font-size: 24px;
+}
+
+img.emma, img.dave {
+    margin: 10px 10px 0 10px;
+}
+
 .action-btn{
     width: 275px;
     margin: 15px auto;
@@ -70,23 +78,21 @@ section {
 #reasons {
     width: 92%;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 185px;
 }
 
 #reasons .left {
     text-align: left;
-    color: #333;
+    color: #57C5EC;
     margin-right: 20%;
 }
 
 #reasons .right {
     text-align: right;
-    color: #000;
+    color: #BE3B39;
     margin-left: 20%;
 }
 
-hr {
-    width: 100%;
-    height: 5px;
-    background-color: red;
+#btm-spacer {
+    height: 120vh;
 }

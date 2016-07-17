@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	// Variables
-	var targetScroll = 1316 // 1458 (hr .position().top) - 185 (header height) 
-
+	var targetScroll = $('#btm-spacer').position().top - 185 // - 185 (header height) 
+	console.log(targetScroll);
 	// Scroll event listener
 	$(window).scroll(function() {
 		// When bottom of header reaches target point
@@ -18,7 +18,7 @@ $(document).ready(function(){
 				$('.action-btn').show('slow');
 			}
 		} else {
-			// Revert changes
+			// Revert changes if col div is missing
 			if ( $('img').parent().attr('class') === "row" ) {
 
 				$('.emma').wrapAll('<div class="col-xs-6">');
