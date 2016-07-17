@@ -25,29 +25,33 @@ body {
     margin-top: 30vh;
 }
 
-#match {
+header {
     background-color:  #333;
     color: #eee;
     line-height: 1.4;    
     text-align: center;
-/*    position: fixed;*/
-    top: 0;
     width: 100%;
 }
 
-#match #headline {
+.header-sticky {
+    position: fixed;
+    z-index: 10;
+        top: 0;
+}
+
+#headline {
     margin-top: 60px;
     margin-bottom: 0;
     font-size: 48px;
     display: none;
 }
 
-#match #tagline {
+#tagline {
     margin-top: 0;
     display: none;
 }
 
-#match .circle {
+.circle {
     width: 120px;
     height: 120px;
     margin: 10px 10px 40px 10px;
@@ -90,7 +94,7 @@ img.emma, img.dave {
 #reasons {
     width: 92%;
     margin: 0 auto;
-    margin-top: 185px;
+    margin-top: 0px;
 }
 
 #reasons .left {

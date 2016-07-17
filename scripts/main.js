@@ -8,10 +8,20 @@ $(document).ready(function(){
 	$(window).scroll(function() {
 
 		// updates var if window size changed
-		stickyTarget = $('header').position().top;
+		stickyTarget = $('#trigger').position().top;
 		matchTarget = $('#btm-spacer').position().top - 185 // adjusted for header height 
 
-		// When bottom of header reaches target point
+		// When top of window reaches sticky target point
+		if ( $(window).scrollTop() > stickyTarget ) {
+			$('header').addClass('header-sticky');
+			// adjust offset for reasons section
+			$('#reasons').css("margin-top", "185px");
+		} else {
+			$('header').removeClass('header-sticky');
+			$('#reasons').css("margin-top", "0px");
+		}
+
+		// When bottom of header reaches match target point
 		if ( $(window).scrollTop() > matchTarget ) {
 			// Detect parent element, so unwrap only happens once
 			if ( $('.logo').parent().attr('class') === "col-xs-6" ) {
