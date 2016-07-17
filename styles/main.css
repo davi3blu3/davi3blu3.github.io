@@ -1,28 +1,21 @@
-/* HEADER STYLE */
-
-
-
-/* MATCH STYLE */
 
 body {
     margin: 0;
+    background-color: #acdbec;
 }
 
 .jumbo-image {
-    text-align: center;
     height: 80vh;
     margin-bottom: 0;
-    background-image: url(../img/nash_skyline_med.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
-
+    /* image url in media query section */
 }
 
 .title {
-    margin-top: 30vh;
+    text-align: center;    
 }
 
 header {
@@ -31,16 +24,17 @@ header {
     line-height: 1.4;    
     text-align: center;
     width: 100%;
+    height: 185px;
 }
 
 .header-sticky {
     position: fixed;
     z-index: 10;
-        top: 0;
+    top: 0;
 }
 
 #headline {
-    margin-top: 60px;
+    margin-top: 10vh;
     margin-bottom: 0;
     font-size: 48px;
     display: none;
@@ -49,6 +43,7 @@ header {
 #tagline {
     margin-top: 0;
     display: none;
+    font-size: 18px;
 }
 
 .circle {
@@ -69,20 +64,30 @@ img.emma, img.dave {
     margin: 10px 10px 0 10px;
 }
 
-.action-btn{
-    width: 275px;
-    margin: 15px auto;
+.action-btn {
     padding: 12px;
     display: none;
     background-color: #333;
     border: 1px solid #eee;
-    border-radius: 10px;
     color: #eee;
     font-size: 15px;
 }
 
-.action-btn:hover {
+a, .action-btn {
+    width: 275px;
+    margin: 15px auto;
+    border-radius: 10px;    
+}
+
+a {
+    display: block;
+    width: 275px;
+}
+
+.action-btn:hover, a:hover {
     background-color: #778;
+    text-decoration: none;
+    color: #eee;
 }
 
 #change {
@@ -92,23 +97,94 @@ img.emma, img.dave {
 }
 
 #reasons {
-    width: 92%;
     margin: 0 auto;
     margin-top: 0px;
 }
 
-#reasons .left {
+.left {
     text-align: left;
-    color: #57C5EC;
-    margin-right: 20%;
+    color: #2f4957;
 }
 
-#reasons .right {
+.right {
     text-align: right;
-    color: #BE3B39;
-    margin-left: 20%;
+    color: #bf0906;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 #btm-spacer {
     height: 120vh;
+}
+
+/*==========  Media Queries  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+    .jumbo-image {
+        background-image: url(../img/nash_skyline_small.jpg);
+    }
+
+    .title {
+        margin-top: 20vh;    
+    }
+
+    .left {
+        margin-right: 15%;
+    }    
+
+    .right {
+        margin-left: 15%;
+    }    
+}
+
+/* Extra Small Devices, Phones */ 
+/*@media only screen and (min-width : 480px) {
+
+}*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .jumbo-image {
+        background-image: url(../img/nash_skyline_med.jpg);
+    }
+
+    .title {
+        margin-top: 25vh;    
+    }
+
+    .left {
+        margin-right: 20%;
+    }    
+
+    .right {
+        margin-left: 20%;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+/*@media only screen and (min-width : 992px) {
+
+}*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    .jumbo-image {
+        background-image: url(../img/nash_skyline_large.jpg);
+    }
+
+    .title {
+        margin-top: 30vh;    
+    }
+    .left {
+        margin-right: 25%;
+    }    
+
+    .right {
+        margin-left: 25%;
+    }    
 }

@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 				$('.emma').wrapAll('<div class="col-xs-6">');
 				$('.dave').wrapAll('<div class="col-xs-6">');
-				$('#match').css("height", "auto");
+				$('#match').css("height", "185px");
 				$('.caption').show();
 				$('#headline').hide();
 				$('#tagline').hide();
