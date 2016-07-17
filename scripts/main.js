@@ -1,30 +1,36 @@
 $(document).ready(function(){
 
 	// Variables
-	var targetScroll = $('#btm-spacer').position().top - 185 // - 185 (header height) 
-	console.log(targetScroll);
+	var targetScroll;
+
 	// Scroll event listener
 	$(window).scroll(function() {
+
+		// updates var if window size changed
+		targetScroll = $('#btm-spacer').position().top - 185 // adjusted for header height 
+
 		// When bottom of header reaches target point
 		if ( $(window).scrollTop() > targetScroll ) {
 			// Detect parent element, so unwrap only happens once
-			if ( $('img').parent().attr('class') === "col-xs-6" ) {
+			if ( $('.logo').parent().attr('class') === "col-xs-6" ) {
+				//test
+				console.log("Triggered");
 				// trigger Tinder match
-				$('img').unwrap();
+				$('.logo').unwrap();
 				$('#match').css("height", "100vh");
-				$('h2').hide();
+				$('.caption').hide();
 				$('#headline').show('slow');
 				$('#tagline').show('slow');
 				$('.action-btn').show('slow');
 			}
 		} else {
 			// Revert changes if col div is missing
-			if ( $('img').parent().attr('class') === "row" ) {
+			if ( $('.logo').parent().attr('class') === "row" ) {
 
 				$('.emma').wrapAll('<div class="col-xs-6">');
 				$('.dave').wrapAll('<div class="col-xs-6">');
 				$('#match').css("height", "auto");
-				$('h2').show();
+				$('.caption').show();
 				$('#headline').hide();
 				$('#tagline').hide();
 				$('.action-btn').hide();
