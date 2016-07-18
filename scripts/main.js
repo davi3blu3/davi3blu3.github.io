@@ -12,7 +12,7 @@ $(document).ready(function(){
 		matchTarget = $('#btm-spacer').position().top - 185 // adjusted for header height 
 
 		// When top of window reaches sticky target point
-		if ( window.pageYOffset > stickyTarget ) {
+		if ( window.pageYOffset > stickyTarget || $(window).scrollTop() > stickyTarget) {
 
 			// Make Header Sticky
 			$('header').addClass('header-sticky');
@@ -26,7 +26,7 @@ $(document).ready(function(){
 		}
 
 		// When bottom of header reaches match target point -- make sure it only happens once
-		if ( window.pageYOffset > matchTarget ) {
+		if ( window.pageYOffset > matchTarget || $(window).scrollTop() > matchTarget) {
 
 			// Detect parent element, so unwrap only happens once
 			if ( $('.logo').parent().attr('class') === "col-xs-6" ) {
