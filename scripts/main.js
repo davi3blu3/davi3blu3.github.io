@@ -9,8 +9,7 @@ $(document).ready(function(){
 
 		// updates var if window size changed
 		stickyTarget = $('#trigger').offset().top;
-		matchTarget = $('#btm-spacer').offset().top - 185 // adjusted for header height 
-        console.log(stickyTarget + " sticky, match: " + matchTarget);
+		matchTarget = $('#btm-spacer').offset().top - 185 // adjusted for header height
 		// When top of window reaches sticky target point
 		if ( window.pageYOffset > stickyTarget || $(window).scrollTop() > stickyTarget) {
 
@@ -30,8 +29,7 @@ $(document).ready(function(){
 
 			// Detect parent element, so unwrap only happens once
 			if ( $('.logo').parent().attr('class') === "col-xs-6" ) {
-				//test
-				console.log("Triggered");
+
 				// trigger Tinder match
 				$('.logo').unwrap();
 				$('#match').css("height", "100vh");
@@ -55,12 +53,4 @@ $(document).ready(function(){
 		}
 
 	});
-
-
-	//	console.log( "Window: " + $(window).scrollTop() ); // current scroll position
-
-	//	console.log( "Trigger: " + $('#trigger').position().top ); // target scroll position
-
-
-
 })
