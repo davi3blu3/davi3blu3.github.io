@@ -8,9 +8,9 @@ $(document).ready(function(){
 	$(window).scroll(function() {
 
 		// updates var if window size changed
-		stickyTarget = $('#trigger').position().top;
-		matchTarget = $('#btm-spacer').position().top - 185 // adjusted for header height 
-
+		stickyTarget = $('#trigger').offset().top;
+		matchTarget = $('#btm-spacer').offset().top - 185 // adjusted for header height 
+        console.log(stickyTarget + " sticky, match: " + matchTarget);
 		// When top of window reaches sticky target point
 		if ( window.pageYOffset > stickyTarget || $(window).scrollTop() > stickyTarget) {
 
