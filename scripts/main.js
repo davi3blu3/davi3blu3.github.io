@@ -11,18 +11,27 @@ $(document).ready(function(){
 		stickyTarget = $('#trigger').position().top;
 		matchTarget = $('#btm-spacer').position().top - 185 // adjusted for header height 
 
+		// console.log( "scrollTop: " + $(window).scrollTop() );
+
+		// console.log( "page y offset: " + window.pageYOffset );
+
 		// When top of window reaches sticky target point
-		if ( $(window).scrollTop() > stickyTarget ) {
+		if ( window.pageYOffset > stickyTarget ) {
+
+			// Make Header Sticky
 			$('header').addClass('header-sticky');
-			// adjust offset for reasons section
 			$('#reasons').css("margin-top", "185px");
+
 		} else {
+
+			// Unstick Header
 			$('header').removeClass('header-sticky');
 			$('#reasons').css("margin-top", "0px");
 		}
 
-		// When bottom of header reaches match target point
-		if ( $(window).scrollTop() > matchTarget ) {
+		// When bottom of header reaches match target point -- make sure it only happens once
+		if ( window.pageYOffset > matchTarget ) {
+
 			// Detect parent element, so unwrap only happens once
 			if ( $('.logo').parent().attr('class') === "col-xs-6" ) {
 				//test

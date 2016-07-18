@@ -5,7 +5,7 @@ body {
 }
 
 .jumbo-image {
-    height: 80vh;
+    height: 85vh;
     margin-bottom: 0;
     background-position: center center;
     background-repeat: no-repeat;
@@ -43,7 +43,6 @@ header {
 #tagline {
     margin-top: 0;
     display: none;
-    font-size: 18px;
 }
 
 .circle {
