@@ -95,10 +95,6 @@ a {
 
 /* MAIN TEXT SECTION */
 
-#reasons {
-/*    margin: 0 auto;*/
-}
-
 .quote {
     position:relative;
     padding:15px;
@@ -168,8 +164,16 @@ a {
     }    
 }
 
+/* revert bootstrap margins for text bubbles on smaller screens */
+@media only screen and (max-width : 767px) {
+   .left {
+        margin-left: 12px;
+    }
 
-
+    .right {
+        margin-right: 12px;
+    } 
+}
 
 /* Small Devices, Tablets / Medium Devices, Desktops */
 @media only screen and (min-width : 768px) {
