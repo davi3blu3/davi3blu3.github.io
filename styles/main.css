@@ -4,7 +4,9 @@ body {
     background-color: #acdbec;
 }
 
-.jumbo-image {
+/* TITLE SECTION */
+
+#title-section {
     height: 85vh;
     margin-bottom: 0;
     background-position: center center;
@@ -17,6 +19,8 @@ body {
 .title {
     text-align: center;    
 }
+
+/* HEADER / 'MATCH' SECTION */
 
 header {
     background-color:  #333;
@@ -89,15 +93,10 @@ a {
     color: #eee;
 }
 
-#change {
-    position: relative;
-    width: 50px;
-    height: 20px;
-}
+/* MAIN TEXT SECTION */
 
 #reasons {
     margin: 0 auto;
-    margin-top: 0px;
 }
 
 .left {
@@ -118,10 +117,10 @@ a {
 
 /*==========  Media Queries  ==========*/
 
-/* Custom, iPhone Retina */ 
+/* Extra Small Devices, Phones */  
 @media only screen and (min-width : 320px) {
 
-    .jumbo-image {
+    #title-section {
         background-image: url(../img/nash_skyline_small.jpg);
     }
 
@@ -138,15 +137,13 @@ a {
     }    
 }
 
-/* Extra Small Devices, Phones */ 
-/*@media only screen and (min-width : 480px) {
 
-}*/
 
-/* Small Devices, Tablets */
+
+/* Small Devices, Tablets / Medium Devices, Desktops */
 @media only screen and (min-width : 768px) {
 
-    .jumbo-image {
+    #title-section {
         background-image: url(../img/nash_skyline_med.jpg);
     }
 
@@ -164,7 +161,7 @@ a {
 
 }
 
-/* Medium Devices, Desktops */
+
 /*@media only screen and (min-width : 992px) {
 
 }*/
@@ -172,7 +169,7 @@ a {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
-    .jumbo-image {
+    #title-section {
         background-image: url(../img/nash_skyline_large.jpg);
     }
 
@@ -185,5 +182,12 @@ a {
 
     .right {
         margin-left: 25%;
+    }    
+}
+
+/* iPhone Retina Display*/
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max–moz-device-pixel-ratio: 2) {
+    #title-section {
+        background-image: url(../img/nash_skyline_large.jpg);
     }    
 }

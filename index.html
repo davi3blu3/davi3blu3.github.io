@@ -1,20 +1,36 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>COVER LETTER</title>
-        <meta name="description" content="an html cover letter to Emma, Inc.">
+        <title>Interview Me</title>
+        <meta name="description" content="Why you should Interview Dave Harned">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+        <link rel="manifest" href="favicon.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
     <body>
     
-    <section class="jumbotron jumbo-image">
+    <!-- Title Section - big background image at the top of the page-->
+    <section class="jumbotron" id="title-section">
         <div class="title">
             <h1>Why You Should Interview</h1>
             <h2>Dave Harned for Support Engineer</h2>
@@ -22,9 +38,10 @@
         </div>
     </section>
 
+    <!-- Trigger point for scroll event listener -->
     <section id="trigger"></section>
 
-        
+    <!-- Becomes Sticky Header on first scroll point, Becomes full page on second scroll point -->   
     <header id="match">
         <img id="headline" src="img/match_txt_275.jpg"></img>
         <p id="tagline">I think I could be a great fit on the Support Engineer team<br>at Emma, and I would love to interview with you!</p>
@@ -45,6 +62,7 @@
         <a href="https://github.com/davi3blu3" target="_blank"><div class="action-btn">GitHub</div></a>
     </header>
 
+    <!-- Main Text Section - Body -->
     <section id="reasons">
         <div class="container">
             <h3 class="left">Triage, reproduction, and remediation of customer-reported bugs</h3>
@@ -73,10 +91,10 @@
         </div>             
     </section>
 
-    <!-- Triggers jquery header transition and provides space to scroll-->
+    <!-- Trigger point for scroll event listener -->
     <section id="btm-spacer"></section>
         
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="scripts/jquery-1.12.0.min.js"></script>
     <script src="scripts/main.js"></script>
     </body>
 </html>

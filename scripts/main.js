@@ -11,10 +11,6 @@ $(document).ready(function(){
 		stickyTarget = $('#trigger').position().top;
 		matchTarget = $('#btm-spacer').position().top - 185 // adjusted for header height 
 
-		// console.log( "scrollTop: " + $(window).scrollTop() );
-
-		// console.log( "page y offset: " + window.pageYOffset );
-
 		// When top of window reaches sticky target point
 		if ( window.pageYOffset > stickyTarget ) {
 
