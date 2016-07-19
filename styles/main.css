@@ -37,6 +37,11 @@ header {
     top: 0;
 }
 
+#match {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 #headline {
     margin-top: 10vh;
     margin-bottom: 0;
@@ -220,13 +225,13 @@ a {
     .title {
         margin-top: 30vh;    
     }
-    .left {
+/*    .left {
         margin-right: 25%;
     }    
 
     .right {
         margin-left: 25%;
-    }    
+    } */   
 }
 
 /* iPhone Retina Display*/
