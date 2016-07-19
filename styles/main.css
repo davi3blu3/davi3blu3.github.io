@@ -37,10 +37,6 @@ header {
     top: 0;
 }
 
-#match {
-    margin-left: 15px;
-    margin-right: 15px;
-}
 
 #headline {
     margin-top: 10vh;
@@ -50,8 +46,9 @@ header {
 }
 
 #tagline {
-    margin-top: 0;
+    margin: 0 auto;
     display: none;
+    max-width: 275px;
 }
 
 .circle {
@@ -65,7 +62,7 @@ header {
 }
 
 .caption {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 img.emma, img.dave {
