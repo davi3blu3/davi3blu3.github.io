@@ -156,15 +156,15 @@ a {
 /*==========  Media Queries  ==========*/
 
 /* Retina-displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+/*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 
     #title-section {
         background-image: url(../img/nash_skyline_small.jpg);
         background-size: 334px 267px;
-        668 × 534
+
     }
 
-}
+}*/
 
 /* Extra Small Devices, Phones */  
 @media only screen and (min-width : 320px) {
