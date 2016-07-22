@@ -159,7 +159,8 @@ a {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 
     #title-section {
-        background-image: url(../img/nash_skyline_large.jpg);
+        background-image: url(../img/nash_skyline_retina.jpg);
+        background-size: 300px 560px;
     }
 
 }
